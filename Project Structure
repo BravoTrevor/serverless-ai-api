@@ -1,0 +1,14 @@
+serverless-ai-api/  
+├── backend/  
+│   ├── lambda/              # AI inference code  
+│   │   └── predict.py       # PyTorch model handler  
+│   ├── terraform/           # AWS infrastructure  
+│   │   └── main.tf          # Lambda + API Gateway setup  
+│   └── requirements.txt     # Python dependencies  
+├── frontend/  
+│   ├── src/                 # React app  
+│   │   ├── hooks/usePrediction.ts  # API client  
+│   │   └── App.tsx          # Dashboard  
+│   └── Dockerfile           # Optional containerization  
+└── .github/workflows/       # CI/CD  
+    └── deploy.yml  

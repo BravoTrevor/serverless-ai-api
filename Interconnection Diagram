@@ -1,0 +1,5 @@
+graph LR  
+  A[React Frontend] -->|HTTP| B(API Gateway)  
+  B -->|Triggers| C[AWS Lambda]  
+  C -->|Reads| D[(S3 Model Bucket)]  
+  C -->|Logs| E[CloudWatch]  
